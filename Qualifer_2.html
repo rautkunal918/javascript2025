@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        var p = /p*/;
+
+        function match() {
+            var str = textfield.value;
+            if (p.test(str)) {
+                alert("The string does not contain zero or more p")
+            } else {
+                alert("The string conatin zero or more p")
+
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="textfield">
+    <input type="button" value="Check" onclick="match()">
+</body>
+
+</html>

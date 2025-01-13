@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function create_cookie() {
+            var cookie_val = username.value;
+            document.cookie + "username = " + cookie_val;
+            alert("Cookie is created");
+        }
+    </script>
+</head>
+
+<body>
+    Enter a cookie <input type="text" id="username">
+    <input type="button" value="click here" onclick=create_cookie()>
+</body>
+
+</html>

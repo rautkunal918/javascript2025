@@ -1,0 +1,31 @@
+<html>
+<center>
+    <h2>
+        Image SlideShow
+    </h2>
+</center>
+
+<head>
+    <script>
+        img_array = new Array('‪D:/176697.jpg', 'D:/176698.jpg', '‪D:/176699.jpg', '‪D:/174035.jpg');
+        img = 0;
+
+        function display(num) {
+            img = img + num;
+            if (img > img_array.length - 1) {
+                img = 0;
+            }
+        }
+        if (img < 0) {
+            img = img_array.lenght - 1;
+        }
+        document.slide.src = img_array[img];
+    </script>
+
+    <body>
+        <img src='‪D:/176697.jpg' width=500 heght=500 name='Slide'>
+        <input type="button" value="previous" onclick="display(-1)">
+        <imput type="button" value="Next" onclick="display(1)">
+    </body>
+
+</html>

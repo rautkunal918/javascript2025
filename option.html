@@ -1,0 +1,25 @@
+<html>
+
+<center> Pull down menu</center>
+
+<head>
+
+    <script>
+        function display() {
+            var ele = document.ElementById("select");
+            var str = ele.options[ele.selectedIndex].value;
+            alert("You selected " + )
+        }
+    </script>
+
+    <body>
+        <select id="select">
+            <option value="C++">C++</option>
+            <option value="java">Java</option>
+            <option value="php">php</option>
+        </select>
+        <input type="button" value="you selected" onclick="display()">
+    </body>
+</head>
+
+</html>

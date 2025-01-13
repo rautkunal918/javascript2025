@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function enable() {
+            document.frm1.b1.disable = false;
+        }
+
+        function disable() {
+            document.frm1.b1.disable = true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm1">
+        <input type="text" name="b1" value=" ">
+        <input type="button" name="b2" value="ENABLE" onclick=enable()>
+        <input type="button" name="b3" value="DISABLE" onclick=disable()>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+        var p = /p?/;
+
+        function match() {
+            var str = textfield.value;
+            if (p.test(str)) {
+                alert("String contains atmost one p");
+            } else {
+                alert("String does contains atmost one p");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Enter a string
+    <input type="text" id="textfield">
+    <input type="button" value="Check" onclick="match()">
+</body>
+
+</html>

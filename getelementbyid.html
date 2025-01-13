@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function check() {
+            var str = document.getElementById("i");
+            if (str.value == " ") {
+                alert("please enter text");
+            } else {
+                alert("You entered " + str.value)
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm1">
+        <input type="text" name="b1" value=" " id="i">
+        <input type="button" name="b1" value="click" onclick=check()>
+    </form>
+</body>
+
+</html>

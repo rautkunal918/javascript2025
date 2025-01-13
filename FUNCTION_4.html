@@ -1,0 +1,19 @@
+<html>
+<!-- CALLING FUNCTION FROM ANOTHER FUNCTION -->
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function rectangle(l, b) {
+            document.write("Area of rectangle is " + l * b);
+        }
+
+        function circle(r) {
+            rectangle(2, 10);
+            return 3.14 * r * r;
+        }
+        ans = circle(20);
+        document.write(" <br> Area of circle is " + ans);
+    </script>
+</head>
+
+</html>

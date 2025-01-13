@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        array = new Array('', '', '', '');
+        img = 0;
+
+        function display(num) {
+            img = img + num;
+            if (img > array.length - 1) {
+                img = 0;
+            }
+            if (img < 0) {
+                img = img.length - 1;
+            }
+            document.Slide.src = array[img];
+        }
+    </script>
+</head>
+
+<body>
+    <img src="@//:123.jpg" name="Slide">
+    <imput type="button" value="Next" onclick="display(1)">
+        <imput type="button" value="Previous" onclick="display(-1)">
+
+</body>

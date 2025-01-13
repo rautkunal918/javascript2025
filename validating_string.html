@@ -1,0 +1,29 @@
+<html>
+    <hred>
+        <script language="javascript" type="text/javascript">
+            function display()
+            {
+                var ele=document.getElementById("select").value;
+                if(ele=="select_sub")
+                {
+                    alert("PLz select subject");
+                }
+                else
+                {
+                    document.getElementById("demo").innerHTML="You  selected 😊😂🤣🤣🤣"+ele;
+                }
+            }
+            </script>
+            </head>
+            <body>
+                <select id="select">
+                <option value="Java">java</option>
+                <option value="J">j</option>
+                <option value="a">a</option>
+                <option value="v">v</option>  
+                <option value="select_sub">select_sub</option> 
+            </select>
+            <input type="Button" value="submit" onclick="display()">
+            <p id="demo"></p>
+       </body>
+</html>

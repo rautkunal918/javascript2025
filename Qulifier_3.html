@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script>
+        var p = /p$/;
+
+        function match() {
+            str = textfield.value;
+            if (p.test(str)) {
+                alert("The string contains p at the ending");
+            } else {
+                alert("The string does not contains p at the end");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Enter a string
+    <input type="text" id="textfield">
+    <input type="button" value="check" onclick=match()>
+</body>
+
+</html>

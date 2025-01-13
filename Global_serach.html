@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function match() {
+            var str = textfield.value;
+            var pat = str.match(/ student /);
+            if (pat != null) {
+                alert("The String" + str + "contains student")
+            } else {
+                alert("The String" + str + " does not contains student")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>
+        <p>Checking the availablity ofwordin given string
+        </p>
+    </h3>
+    Enter a string
+    <input type="text" id="textfield">
+    <input type="button" value="Check" onclick="match()">
+</body>
+
+</html>

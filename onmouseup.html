@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function up() {
+            document.frm1.b1.value = "UP";
+        }
+
+        function down() {
+            document.frm1.b1.value = "DOWN";
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm1">
+        <input type="button" name="b1" value="click" onmouseup=up() onmousedown=down()>
+    </form>
+</body>
+
+</html>

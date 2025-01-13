@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        var p = /p[2]/;
+
+        function match() {
+            var str = textfield.value;
+            if (p.test(str))
+
+            {
+                alert("The String contain  2 p in a sequence ")
+            } else
+
+            {
+                alert("The String does not contsins 2 p a sequwnce")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Enter a String
+    <input type="text" id="textfield">
+    <input type="button" value="CHECK " onclick=match()>
+</body>
+
+</html>

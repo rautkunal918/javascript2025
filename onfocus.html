@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function focus() {
+            document.frm1.b1.value = "FOCUS";
+        }
+
+        function blur() {
+            document.frm1.b1.value = "BLUR";
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm1">
+        <input type="text" name="t1" value=" " onblur=blur() onfocus=focus()>
+        <input type="button" name="b1" value="CLICK">
+    </form>
+</body>
+
+</html>

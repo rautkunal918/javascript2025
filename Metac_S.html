@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        var p = /\S/;
+
+        function match() {
+            var str = textfield.value;
+            if (p.test(str)) {
+                alert("String does not contains white space")
+
+            } else(
+                alert("String contains white space ")
+            )
+
+        }
+    </script>
+</head>
+
+<body>
+
+    Enter a String <input type="text" id="textfield">
+    <input type="button" value="check" onclick=match()>
+</body>
+
+</html>

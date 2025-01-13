@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        function check() {
+            var t1 = document.getElementById('n')
+            var t2 = document.getElementById("m")
+            var t3 = document.getElementById("s")
+            var t4 = document.getElementById("e1")
+            t1.style.background = "red"
+            t1.disabled = "true"
+            t2.style.background = "red"
+            t2.disabled = "true"
+            t3.style.background = "red"
+            t3.disabled = "true"
+            t4.disabled = "true"
+            alert(document.getElementById("n").value + document.getElementById("s").value + "msbte.com ");
+        }
+    </script>
+</head>
+
+<body>
+    <form name=f1>
+        Name:<input type=text id=n>
+        <br>
+        <br> Middle Name:<input type=text id=m>
+        <br>
+        <br> Surname:
+        <input type=text id=s>
+        <br>
+        <br> Email :-<input type="email" id="e1" value="rajni.pathak@msbte.com"><br>
+        <br><br> <input type="button" name="b1" value="Submit" onclick=check()>
+        <br>
+        <br> 5
+        <br>
+    </form>
+</body>
+
+</html>

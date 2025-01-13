@@ -1,0 +1,30 @@
+<html>
+    <centre>
+<h2>Imageb Slide Show </h2>
+    </centre>
+    <head>
+        <script>
+         img_array=new Array('C:\Users\Kunal\Downloads\Snapchat-909845673.jpg','C:\Users\Kunal\Downloads\Snapchat-2110790995.jpg','C:\Users\Kunal\Downloads\Snapchat-60941163.jpg','C:\Users\Kunal\Downloads\Snapchat-724109738.jpg','C:\Users\Kunal\Downloads\Snapchat-898988475.jpg');
+             img=0;
+            function display(num)
+            {
+                img=img+num;
+                if(img>img_array.length-1)
+                {
+                    img=0;
+                }
+                if(img<0)
+                {
+                    img=img_array.length-1;
+                }
+                document.Slide.src=img_array(img);
+            }
+            </script>
+            </head>
+            <body>
+                <img src="'C:\Users\Kunal\Downloads\Snapchat-909845673.jpg'" width=500 height=500 name="Slide">
+                <br>
+                <input type="button" value="Previous" onclick="display(-1)">
+                <input type="button" vlaue="Next" onclick="display(1)">
+                </body>
+                </html>

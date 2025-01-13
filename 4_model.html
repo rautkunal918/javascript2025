@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> Calulating </title>
+</head>
+<script language="javascript" type="text/javascript">
+    function calculator(ch) {
+        num1 = parseInt(document.getElementById("number1").value);
+        num2 = parseInt(document.getElementById("number2").value);
+        if (ch == 1) {
+            document.getElementById("para").innerHTML = "Addition is " + (num1 + num2);
+
+        } else if (ch == 2) {
+            document.getElementById("para").innerHTML = "Substraction" + (num1 - num2);
+        } else if (ch == 3) {
+            document.getElementById("para").innerHTML = "Multiplication" + (num1 * num2);
+        } else if (ch == 4) {
+            document.getElementById("para").innerHTML = "Divide" + (num1 / num2);
+        }
+
+    }
+</script>
+
+<body>
+    <p>Enter a first number</p>
+    <input type="text" id="number1">
+    <p>Enter a Second number</p>
+    <input type="text" id="number2"> Result is
+    <p id="para"></p>
+    <input type="button" value="Addition" onclick=calculator(1)>
+    <input type="button" value="Substraction" onclick=calculator(2)>
+    <input type="button" value="Multiplication" onclick=calculator(3)>
+    <input type="button" value="Divide" onclick=calculator(4)>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script language="javascript" type="text/javascript">
+        function create_cookie() {
+            var c = user.value;
+            document.cookie = "uesername" + c;
+            alert("cookie is created");
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Enter username
+        <input type="text" id="user">
+        <input type="button" name="b1" value="Create cookie" onclick=create_cookie()>
+    </form>
+</body>
+
+</html>

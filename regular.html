@@ -1,0 +1,20 @@
+<html>
+<script language="javascript" type="text/javascript">
+    var p = /kunal/;
+
+    function match() {
+        var str = textfield.value;
+        if (p.test(str)) {
+            alert("Matching string is found")
+        } else {
+            alert("Matching string is not found")
+        }
+    }
+</script>
+
+<body>
+    <input id=textfield>
+    <input type="button" value="Click" onclick="match()">
+</body>
+
+</html>

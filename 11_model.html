@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+    <script>
+        function display() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            document.cookie = "username + user;expires Sat 17 / 01 / 2022 00: 00: 01. GMT ";
+            document.cookie = "password + pass;expires Sat 17 / 01 / 2022 00: 00: 01. GMT ";
+
+            alert("Cookie is created")
+        }
+    </script>
+</head>
+
+<body>
+    Enter a id <input type="text" id="username"> Enter pass
+    <input type="text" id="password">
+    <input type="button" value="storeCookie" onclick="display()">
+</body>
+
+</html>
